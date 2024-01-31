@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    <title>Form</title>
+</head>
+<body>
+
+    <div>
+        <form>
+            <input type="text" class="input" id="cin" placeholder="CIN"><br><br>
+            <input type="text" class="input" id="nom" placeholder="John"><br><br>
+            <input type="text" class="input" id="prenom" placeholder="Doe"><br><br>
+            <input type="text" class="input" id="sems" placeholder="Semestre"><br><br>
+            <input type="text" class="input" id="filiere" placeholder="Filiere">
+            <br><br>
+            <input class="btn" type="button" id="addTb" value="Ajouter" onclick="addtab()"><br><br>
+            <input class="btn" type="reset" value="Annuler"><br><br>
+            <input class="btn" type="button" id="afficher" value="Afficher">
+            <br><br>
+        </form>
+
+        <table id="mon_tableau">
+            <tr>
+                <th>Cin</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Semestre</th>
+                <th>Filiere</th>
+            </tr>
+        </table>
+        <br><br>
+        <input type="button" class="btn" id="supp" value="Supprimer" onclick="deleteLigne()">
+        <input type="button" class="btn" id="retour" value="Retour">
+
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
